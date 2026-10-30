@@ -1,0 +1,21 @@
+@startuml
+title Standart Bank Context Diagram
+
+top to bottom direction
+
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Component.puml
+
+Person(manager, "Call center manager")
+Person(remoteManager, "Remote call center manager")
+System(callOffice, "Call office system")
+System(depositService, "Deposit service")
+
+System_Ext(remoteCallOffice, "Remote call office system")
+
+Rel(manager, callOffice, "Get deposits info")
+Rel(callOffice, depositService, "Get deposits info")
+
+Rel(remoteManager, remoteCallOffice, "Get deposits info")
+Rel(depositService, remoteCallOffice, "Send deposits info")
+
+@enduml

@@ -1,0 +1,38 @@
+@startuml
+title Standart bank Container Diagram
+
+top to bottom direction
+
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Component.puml
+
+Person(callOfficeManager, "Call office manager", "Manages calls")
+Person(remoteCallOfficeManager, "Remote call office manager", "Manages calls")
+System(StandartBank, "Standart Bank", "Standart Bank")
+
+Container_Boundary(StandartBank, "Standart Bank") {
+  Container(ABS, "ABS", "Delphi", "Handles bank processes")
+  Container(DepositService, "Deposit Service", "Java, SpringBoot", "Handles deposits")
+  Container(CallOffice, "Call office system", "Java, SpringBoot, React.js", "Process calls")
+  Container(DepositQueue, "Deposit queue", "Kafka", "Process deposits data")
+  Container(CallOfficeDatabase, "Call Office Database", "PostgreSQL", "Stores user data")
+  Container(ABSDatabase, "ABS Database", "Oracle", "Stores bank data")
+  Container(DepositDatabase, "Deposits Database", "PostgreSQL", "Stores deposits data")
+}
+
+System_Ext(remoteCallOffice, "Remote call office", "External call office")
+
+Rel(callOfficeManager, CallOffice, "Make calls, Check deposits info")
+Rel(CallOffice, DepositService, "Get deposits info")
+
+Rel(remoteCallOfficeManager, remoteCallOffice, "Make calls, Check deposits info")
+
+Rel(DepositService, remoteCallOffice, "Send email with deposits info")
+
+Rel(DepositQueue, DepositService, "Provide deposit info, Provide deposit request data")
+Rel(ABS, DepositQueue, "Send deposit info, Send deposit data")
+
+Rel(CallOffice, CallOfficeDatabase, "Read / Write data")
+Rel(ABS, ABSDatabase, "Read / Write bank data")
+Rel(DepositService, DepositDatabase, "Read / Write deposit data")
+
+@enduml

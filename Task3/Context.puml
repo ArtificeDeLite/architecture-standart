@@ -1,0 +1,31 @@
+@startuml
+title Standart Bank Context Diagram
+
+top to bottom direction
+
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Component.puml
+
+Person(client, "Client", "A client of the Standart Bank")
+Person(frontOfficeManager, "Front-office manager")
+Person(backOfficeManager, "Back-office manager")
+Person(callManager, "Call center manager")
+System(internetBank, "Internet Bank")
+System(site, "Bank site")
+System(ABS, "Bank ABS")
+
+System_Ext(telecom, "Telecom operator", "Telecom operator")
+
+Rel(client, internetBank, "Get deposits info, Open deposit")
+Rel(client, site, "Get deposits info, Open deposit request")
+Rel(frontOfficeManager, ABS, "Create deposit, Get deposit info, Attach documents")
+Rel(ABS, frontOfficeManager, "Provide deposit info")
+Rel(backOfficeManager, ABS, "Check deposits info, Create deposit")
+Rel(ABS, backOfficeManager, "Provide deposit info")
+Rel(callManager, ABS, "Create deposit request, Get deposit info")
+
+Rel(ABS,telecom, "Send SMS")
+Rel(internetBank, ABS, "Get deposits info, create deposit request")
+Rel(site, ABS,"Get deposits info, create deposit request")
+Rel(telecom, client, "Send SMS")
+
+@enduml
