@@ -11,6 +11,8 @@ Person(backOfficeManager, "Back-office manager")
 Person(callManager, "Call center manager")
 System(internetBank, "Internet Bank")
 System(site, "Bank site")
+System(depositService, "Deposit service")
+System(queue, "Queue")
 System(ABS, "Bank ABS")
 
 System_Ext(telecom, "Telecom operator", "Telecom operator")
@@ -24,8 +26,12 @@ Rel(ABS, backOfficeManager, "Provide deposit info")
 Rel(callManager, ABS, "Create deposit request, Get deposit info")
 
 Rel(ABS,telecom, "Send SMS")
-Rel(internetBank, ABS, "Get deposits info, create deposit request")
-Rel(site, ABS,"Get deposits info, create deposit request")
+Rel(site, depositService, "Get deposits info, create deposit request")
+Rel(internetBank, depositService, "Get deposits info, create deposit request")
+Rel(depositService, queue, "Send requests")
+Rel(queue, depositService, "Receive data")
+Rel(queue, ABS, "Send create deposit request")
+Rel(ABS, queue, "Send updated deposit info")
 Rel(telecom, client, "Send SMS")
 
 @enduml
