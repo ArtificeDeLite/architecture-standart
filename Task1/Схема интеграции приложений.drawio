@@ -1,0 +1,138 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="nmop2lACovi2zMt99YOn">
+    <mxGraphModel dx="2049" dy="1113" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-13" edge="1" parent="1" source="Lpa2XSNF51A1_3RZYDiu-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;entryX=0.51;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" target="Lpa2XSNF51A1_3RZYDiu-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-15" connectable="0" parent="Lpa2XSNF51A1_3RZYDiu-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Ставки кредитования" vertex="1">
+          <mxGeometry relative="1" x="0.0123" y="-4" as="geometry">
+            <mxPoint x="-1" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-2" parent="1" style="shape=mermaidPerson;perimeter=mermaidPersonPerimeter;whiteSpace=wrap;html=1;" value="Сотрудник отдела кредитования" vertex="1">
+          <mxGeometry height="100" width="100" x="40" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-12" edge="1" parent="1" source="Lpa2XSNF51A1_3RZYDiu-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;exitX=1.01;exitY=0.702;exitDx=0;exitDy=0;exitPerimeter=0;startArrow=classic;startFill=1;" target="Lpa2XSNF51A1_3RZYDiu-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-16" edge="1" parent="1" source="Lpa2XSNF51A1_3RZYDiu-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Lpa2XSNF51A1_3RZYDiu-7" value="">
+          <mxGeometry relative="1" x="0.2031" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="60" />
+              <mxPoint x="640" y="60" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-17" connectable="0" parent="Lpa2XSNF51A1_3RZYDiu-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Заявка на открытие депозита" vertex="1">
+          <mxGeometry relative="1" x="0.0615" y="1" as="geometry">
+            <mxPoint x="-55" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-3" parent="1" style="shape=mermaidPerson;perimeter=mermaidPersonPerimeter;whiteSpace=wrap;html=1;" value="Сотрудник кол центра" vertex="1">
+          <mxGeometry height="100" width="100" x="40" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-4" parent="1" style="shape=mermaidPerson;perimeter=mermaidPersonPerimeter;whiteSpace=wrap;html=1;" value="Сотрудник бэк офиса" vertex="1">
+          <mxGeometry height="100" width="100" x="40" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-26" edge="1" parent="1" source="Lpa2XSNF51A1_3RZYDiu-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;startArrow=classic;startFill=1;" target="Lpa2XSNF51A1_3RZYDiu-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-27" connectable="0" parent="Lpa2XSNF51A1_3RZYDiu-26" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Запрос ставок по депозитам" vertex="1">
+          <mxGeometry relative="1" x="-0.0182" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-5" parent="1" style="shape=mermaidPerson;perimeter=mermaidPersonPerimeter;whiteSpace=wrap;html=1;" value="Сотрудник отделения (фронт-офис)" vertex="1">
+          <mxGeometry height="100" width="100" x="40" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-24" edge="1" parent="1" source="Lpa2XSNF51A1_3RZYDiu-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="Lpa2XSNF51A1_3RZYDiu-23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-25" connectable="0" parent="Lpa2XSNF51A1_3RZYDiu-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="СМС о ставке депозита" vertex="1">
+          <mxGeometry relative="1" x="-0.1111" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="АБС" vertex="1">
+          <mxGeometry height="560" width="80" x="600" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Система кол-центра" vertex="1">
+          <mxGeometry height="60" width="80" x="240" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Система партнерского кол-центра" vertex="1">
+          <mxGeometry height="60" width="145" x="320" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-38" edge="1" parent="1" source="Lpa2XSNF51A1_3RZYDiu-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="Lpa2XSNF51A1_3RZYDiu-37" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="СМС шлюз&lt;div&gt;телеком оператора&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="580" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-28" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=1;entryY=0.59;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" target="Lpa2XSNF51A1_3RZYDiu-2" value="">
+          <mxGeometry height="50" relative="1" width="50" x="-0.2546" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="523" />
+              <mxPoint x="220" y="600.2" />
+              <mxPoint x="220" y="680" />
+            </Array>
+            <mxPoint x="136.36426278828685" y="522.9977810353419" as="sourcePoint" />
+            <mxPoint x="130" y="670.2" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-29" connectable="0" parent="Lpa2XSNF51A1_3RZYDiu-28" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Запрос персональных ставок" vertex="1">
+          <mxGeometry relative="1" x="0.2809" y="-2" as="geometry">
+            <mxPoint x="2" y="-34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-31" edge="1" parent="1" source="Lpa2XSNF51A1_3RZYDiu-2" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=0.998;exitY=0.722;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.009;entryY=0.905;entryDx=0;entryDy=0;" target="Lpa2XSNF51A1_3RZYDiu-7" value="">
+          <mxGeometry height="50" relative="1" width="50" x="0.1982" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="692.2" />
+              <mxPoint x="550" y="631.08" />
+            </Array>
+            <mxPoint x="390" y="450" as="sourcePoint" />
+            <mxPoint x="440" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-32" connectable="0" parent="Lpa2XSNF51A1_3RZYDiu-31" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Специальные ставки" vertex="1">
+          <mxGeometry relative="1" x="-0.4414" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-33" edge="1" parent="1" source="Lpa2XSNF51A1_3RZYDiu-5" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0.125;entryY=0.357;entryDx=0;entryDy=0;exitX=1.01;exitY=0.634;exitDx=0;exitDy=0;exitPerimeter=0;" target="Lpa2XSNF51A1_3RZYDiu-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="450" as="sourcePoint" />
+            <mxPoint x="440" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-34" connectable="0" parent="Lpa2XSNF51A1_3RZYDiu-33" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Создание депозита, документы" vertex="1">
+          <mxGeometry relative="1" x="-0.3106" y="-3" as="geometry">
+            <mxPoint x="-29" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-35" edge="1" parent="1" style="endArrow=classic;startArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0;entryY=0.679;entryDx=0;entryDy=0;" target="Lpa2XSNF51A1_3RZYDiu-7" value="">
+          <mxGeometry height="50" relative="1" width="50" x="0.0047" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="499.98" />
+            </Array>
+            <mxPoint x="138.19198009181196" y="499.98" as="sourcePoint" />
+            <mxPoint x="600" y="450.30000000000064" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-36" connectable="0" parent="Lpa2XSNF51A1_3RZYDiu-35" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Обработка заявок на открытие депозита" vertex="1">
+          <mxGeometry relative="1" x="-0.1425" y="4" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lpa2XSNF51A1_3RZYDiu-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Телеком оператор" vertex="1">
+          <mxGeometry height="60" width="120" x="580" y="870" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

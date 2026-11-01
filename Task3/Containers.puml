@@ -1,0 +1,56 @@
+@startuml
+title Standart bank Container Diagram
+
+top to bottom direction
+
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Component.puml
+
+Person(client, "Client", "A client of the Standart Bank")
+Person(depositManager, "Deposit manager", "Manages deposits")
+Person(creditManager, "Credit manager", "Manages credits")
+Person(callCenterManager, "Call center manager", "Manages calls")
+Person(frontOfficeManager, "Front office manager", "Interacts with clients")
+System(StandartBank, "Standart Bank", "Standart Bank")
+
+Container_Boundary(StandartBank, "Standart Bank") {
+  Container(IB, "Internet Bank", "ASP.NET MVC 4.5, .NET Framework 4.5", "Provides bank information, accounts and payments")
+  Container(site, "Bank site", "PHP, React.js", "Provides bank information")
+  Container(ABS, "ABS", "Delphi", "Handles bank processes")
+  Container(DepositService, "Deposit Service", "Java, SpringBoot", "Handles deposits")
+  Container(SMSGateway, "SMS Gateway", "", "Gateway to telecom service")
+  Container(CallCenter, "Call center system", "Java, SpringBoot, React.js", "Process calls")
+  Container(DepositQueue, "Deposit queue", "Kafka", "Process deposits data")
+  Container(CallCenterDatabase, "Call Center Database", "PostgreSQL", "Stores user data")
+  Container(ABSDatabase, "ABS Database", "Oracle", "Stores bank data")
+  Container(DepositDatabase, "Deposits Database", "PostgreSQL", "Stores deposits data")
+}
+
+System_Ext(telecom, "Telecom System", "External system for sms sending")
+
+Rel(client, IB, "Observe deposits info, Opens deposit")
+Rel(client, site, "Observe deposits info, Opens deposit request")
+
+Rel(callCenterManager, CallCenter, "Make calls, Check deposits info, Create deposit requests")
+Rel(CallCenter, DepositService, "Create deposit request; Get deposits info")
+
+Rel(IB, DepositService, "Get deposits info, Create deposit request")
+Rel(site, DepositService, "Get deposits info, Create deposit request")
+Rel(DepositService, DepositQueue, "Request deposits info, Send deposit request to ABS")
+Rel(DepositQueue, DepositService, "Provide deposit info, Provide deposit request data")
+Rel(DepositQueue, ABS, "Request deposits info, Send deposit request to ABS")
+Rel(DepositService, depositManager, "Send emails")
+Rel(DepositService, frontOfficeManager, "Send emails")
+Rel(ABS, DepositQueue, "Send deposit info, Send deposit data")
+
+Rel(depositManager, ABS, "Approve deposit request")
+Rel(frontOfficeManager, ABS, "Create deposit request, Open deposit, Attach documents")
+Rel(creditManager, ABS, "Update credit info")
+
+Rel(DepositService, SMSGateway, "Send SMS")
+Rel(SMSGateway, telecom, "Send SMS")
+Rel(telecom, client, "Send SMS")
+
+Rel(CallCenter, CallCenterDatabase, "Read / Write data")
+Rel(ABS, ABSDatabase, "Read / Write bank data")
+Rel(DepositService, DepositDatabase, "Read / Write deposit data")
+@enduml
